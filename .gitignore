@@ -1,0 +1,40 @@
+/api-common/.idea
+
+/api-common/HELP.md
+
+/api-common/target/
+
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+/api-common/target/.apt_generated
+/api-common/target/.classpath
+/api-common/target/.factorypath
+/api-common/target/.project
+/api-common/target/.settings
+/api-common/target/.springBeans
+/api-common/target/.sts4-cache
+
+
+### IntelliJ IDEA ###
+/api-common/.idea
+/api-common/*.iws
+/api-common/*.iml
+/api-common/*.ipr
+
+### NetBeans ###
+/api-common/nbproject/private/
+/api-common/nbbuild/
+/api-common/dist/
+/api-common/nbdist/
+/api-common/.nb-gradle/
+/api-common/build/
+
+
+### VS Code ###
+/api-common/.vscode/
+
+### Logs ###
+/api-common/logs/
