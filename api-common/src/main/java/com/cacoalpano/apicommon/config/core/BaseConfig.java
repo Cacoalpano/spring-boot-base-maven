@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableConfigurationProperties
-@ConfigurationProperties(prefix = "core")
+@ConfigurationProperties(prefix = "base")
 @Getter
 @Setter
 public class BaseConfig {

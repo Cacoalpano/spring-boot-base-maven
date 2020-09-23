@@ -1,4 +1,4 @@
-core:
+base:
   sql:
     class-name: "com.mysql.cj.jdbc.Driver"
     url: "jdbc:mysql://localhost:3306/"
@@ -11,6 +11,7 @@ core:
     - "/v3/api-docs"
     - "/configuration/**"
     - "/swagger*/**"
+
 #Show sql log
 spring:
   jpa:
