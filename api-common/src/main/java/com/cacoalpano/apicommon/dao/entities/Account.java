@@ -28,6 +28,8 @@ public class Account implements Auditable {
     @Column(name = "password")
     @Convert(converter = CryptoConverter.class)
     private String password;
+    @Column(name = "display_name")
+    private String displayName;
     @Column(name = "email")
     @Convert(converter = CryptoConverter.class)
     private String email;
