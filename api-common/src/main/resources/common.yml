@@ -11,7 +11,10 @@ base:
     - "/v3/api-docs"
     - "/configuration/**"
     - "/swagger*/**"
-
+  aes-key: "aesEncryptionKey"
+  max-session: 1000000
+  secret-key-jwt: 12345678
+  token-validate: 1w
 #Show sql log
 spring:
   jpa:

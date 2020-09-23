@@ -1,8 +1,11 @@
 /api-common/.idea
+/api-demo/.idea
 
 /api-common/HELP.md
+/api-demo/HELP.md
 
 /api-common/target/
+/api-demo/target/
 
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
@@ -17,12 +20,24 @@
 /api-common/target/.springBeans
 /api-common/target/.sts4-cache
 
+/api-demo/target/.apt_generated
+/api-demo/target/.classpath
+/api-demo/target/.factorypath
+/api-demo/target/.project
+/api-demo/target/.settings
+/api-demo/target/.springBeans
+/api-demo/target/.sts4-cache
 
 ### IntelliJ IDEA ###
 /api-common/.idea
 /api-common/*.iws
 /api-common/*.iml
 /api-common/*.ipr
+
+/api-demo/.idea
+/api-demo/*.iws
+/api-demo/*.iml
+/api-demo/*.ipr
 
 ### NetBeans ###
 /api-common/nbproject/private/
@@ -32,9 +47,18 @@
 /api-common/.nb-gradle/
 /api-common/build/
 
+/api-demo/nbproject/private/
+/api-demo/nbbuild/
+/api-demo/dist/
+/api-demo/nbdist/
+/api-demo/.nb-gradle/
+/api-demo/build/
+
 
 ### VS Code ###
 /api-common/.vscode/
+/api-demo/.vscode/
 
 ### Logs ###
 /api-common/logs/
+/api-demo/logs/

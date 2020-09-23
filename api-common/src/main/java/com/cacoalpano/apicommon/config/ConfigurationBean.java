@@ -1,14 +1,18 @@
 package com.cacoalpano.apicommon.config;
 
 import com.cacoalpano.apicommon.config.core.BaseConfig;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.jdbc.DataSourceBuilder;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.*;
 
 import javax.sql.DataSource;
 
 @Configuration
+@ComponentScan(basePackages = {"com.cacoalpano.*"})
+@PropertySources({@PropertySource("classpath:common.yml"),
+        @PropertySource("classpath:application.yml")})
 public class ConfigurationBean {
     @Autowired
     BaseConfig baseConfig;
@@ -22,4 +26,10 @@ public class ConfigurationBean {
         dataSourceBuilder.password(baseConfig.getSql().getPassword());
         return dataSourceBuilder.build();
     }
+
+    @Bean
+    public CloseableHttpClient closeableHttpClient() {
+        return HttpClientBuilder.create().build();
+    }
+
 }

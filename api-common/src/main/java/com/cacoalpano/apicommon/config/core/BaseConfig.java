@@ -17,4 +17,8 @@ public class BaseConfig {
     private String[] allowEndpoint;
     private SqlConfig sql;
     private String esUrl;
+    private String aesKey;
+    private Integer maxSession;
+    private String secretKeyJwt;
+    private String tokenValidate;
 }
