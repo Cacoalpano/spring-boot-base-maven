@@ -3,7 +3,6 @@ package com.cacoalpano.apicommon.converter;
 import com.cacoalpano.apicommon.config.core.BaseConfig;
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.PropertySource;
 
 import javax.crypto.Cipher;
@@ -14,6 +13,7 @@ import javax.persistence.Converter;
 import java.nio.charset.StandardCharsets;
 
 @Converter
+@PropertySource("classpath:common.properties")
 public class CryptoConverter implements AttributeConverter<String, String> {
 
     @Autowired

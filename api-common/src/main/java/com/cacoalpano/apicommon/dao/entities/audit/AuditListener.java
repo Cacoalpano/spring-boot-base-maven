@@ -1,6 +1,7 @@
 package com.cacoalpano.apicommon.dao.entities.audit;
 
 import javax.persistence.PrePersist;
+import javax.persistence.PreRemove;
 import javax.persistence.PreUpdate;
 import java.sql.Timestamp;
 
@@ -23,4 +24,5 @@ public class AuditListener {
         Audit audit = auditable.getAudit();
         audit.setTimeUpdated(new Timestamp(System.currentTimeMillis()));
     }
+
 }

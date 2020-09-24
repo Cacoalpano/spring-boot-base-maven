@@ -8,6 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
 
@@ -16,7 +17,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name ="accounts")
+@Table(name ="account")
 @EntityListeners(AuditListener.class)
 public class Account implements Auditable {
     @Id
@@ -26,21 +27,20 @@ public class Account implements Auditable {
     @Column(name = "user_name")
     private String userName;
     @Column(name = "password")
-    @Convert(converter = CryptoConverter.class)
+//    @Convert(converter = CryptoConverter.class)
     private String password;
     @Column(name = "display_name")
     private String displayName;
     @Column(name = "email")
-    @Convert(converter = CryptoConverter.class)
+//    @Convert(converter = CryptoConverter.class)
     private String email;
     @Column(name = "phone_number")
-    @Convert(converter = CryptoConverter.class)
+//    @Convert(converter = CryptoConverter.class)
     private String phoneNumber;
     @Column(name ="is_active")
     private Boolean isActive;
     @Column(name = "group_id")
     private Long groupId;
-
     @Embedded
     private Audit audit;
 

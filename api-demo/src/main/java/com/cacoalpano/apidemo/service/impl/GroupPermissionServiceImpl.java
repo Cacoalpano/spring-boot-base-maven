@@ -7,6 +7,7 @@ import com.cacoalpano.apidemo.service.GroupPermissionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -17,5 +18,10 @@ public class GroupPermissionServiceImpl extends BaseService implements GroupPerm
     @Override
     public Optional<GroupPermission> findById(Long id) {
         return groupPermissionRepository.findById(id);
+    }
+
+    @Override
+    public List<GroupPermission> findByGroupId(Long groupId) {
+        return groupPermissionRepository.findByGroupId(groupId);
     }
 }

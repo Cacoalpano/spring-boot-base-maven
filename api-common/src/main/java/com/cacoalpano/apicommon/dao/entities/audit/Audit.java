@@ -13,9 +13,12 @@ public class Audit {
     private Boolean delFlag;
     @Column(name = "time_created")
     private Timestamp timeCreated;
-    @Column(name = "user_updated")
-    private Integer userUpdated;
     @Column(name = "time_updated")
     private Timestamp timeUpdated;
+    @Column(name = "user_created")
+    private Long userCreated;
+    @Column(name = "user_updated")
+    private Long userUpdated;
+
 
 }

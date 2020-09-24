@@ -6,3 +6,12 @@ server:
       timeout: 30m
       cookie:
         max-age: 7d
+#spring:
+#  datasource:
+#    password: admin
+#    url: jdbc:mysql://localhost:3306/mydatabase?useSSL=false
+#    username: root
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
